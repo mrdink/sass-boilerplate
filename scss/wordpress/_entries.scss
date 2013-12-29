@@ -1,0 +1,23 @@
+/*------- Entries -------*/
+.entry-content {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.entry-meta {
+    a {
+        font-weight: 700;
+    }
+    .edit-link {
+        clear: both;
+        display: block;
+        font-size: rem-calc(12);
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.8;
+    }
+}

@@ -1,0 +1,46 @@
+/*------- Jetpack -------*/
+#infinite-footer {
+    .container {
+        width: 100%;
+        background: transparent;
+        border: none;
+    }
+    .blog-info {
+        display: none;
+    }
+    .blog-credits {
+        width: auto;
+    }
+}
+
+#infinite-handle {
+    width: 100%;
+    margin-bottom: rem-calc(40);
+    span {
+        color: #7f8d7b;
+        background: transparent;
+        border: 1px solid #555555;
+        text-align: center;
+        -webkit-border-radius: $global-radius;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: $global-radius;
+        -moz-background-clip: padding;
+        border-radius: $global-radius;
+        background-clip: padding-box;
+        text-transform: uppercase;
+        display: block;
+        opacity: 1;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+.tiled-gallery {
+    margin-bottom: rem-calc(40) !important;
+}

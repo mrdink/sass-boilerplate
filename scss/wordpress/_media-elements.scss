@@ -1,0 +1,41 @@
+/*------- Mediaelements -------*/
+.hentry {
+    .mejs-container {
+        margin: rem-calc(12 0 18);
+    }
+    .mejs-mediaelement, .mejs-container .mejs-controls {
+        background: #000;
+    }
+    .mejs-controls {
+        .mejs-time-rail .mejs-time-loaded, .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+            background: #fff;
+        }
+        .mejs-time-rail {
+            .mejs-time-current {
+                background: #24890d;
+            }
+            .mejs-time-total {
+                background: rgba(255, 255, 255, 0.33);
+            }
+        }
+        .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+            background: rgba(255, 255, 255, 0.33);
+        }
+    }
+    .mejs-container .mejs-controls .mejs-time {
+        padding-top: 9px;
+    }
+    .mejs-controls {
+        .mejs-time-rail span {
+            border-radius: 0;
+        }
+        .mejs-horizontal-volume-slider {
+            .mejs-horizontal-volume-total, .mejs-horizontal-volume-current {
+                border-radius: 0;
+            }
+        }
+    }
+    .mejs-overlay-loading {
+        background: transparent;
+    }
+}

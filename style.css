@@ -1,0 +1,108 @@
+/*!
+Theme Name:         Sass Boilerplate
+Theme URI:          https://github.com/mrdink/sass-boilerplate
+Description:        Project starter for any web project but mostly tooled for WordPress
+Version:            1.0
+Author:             Justin Peacock
+Author URI:         http://sixteenbit.com
+*/
+/*------- Assistive text -------*/
+.screen-reader-text { clip: rect(1px, 1px, 1px, 1px); position: absolute; }
+.screen-reader-text:focus { background-color: #f1f1f1; border-radius: 3px; box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); clip: auto; color: #21759b; display: block; font-size: 14px; font-weight: bold; height: auto; line-height: normal; padding: 15px 23px 14px; position: absolute; left: 5px; top: 5px; text-decoration: none; text-transform: none; width: auto; z-index: 100000; /* Above WP toolbar */ }
+
+/*------- Entries -------*/
+.entry-content { -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; hyphens: auto; -ms-word-wrap: break-word; word-wrap: break-word; }
+
+.entry-meta a { font-weight: 700; }
+.entry-meta .edit-link { clear: both; display: block; font-size: 0.75rem; font-weight: 400; text-transform: uppercase; line-height: 1.8; }
+
+/*------- Alignment -------*/
+.alignleft { float: left; }
+
+.alignright { float: right; }
+
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+blockquote.alignleft, img.alignleft { margin: 0.4375rem 1.5rem 0.4375rem 0; }
+
+.wp-caption.alignleft { margin: 0.4375rem 0.875rem 0.4375rem 0; }
+
+blockquote.alignright, img.alignright { margin: 0.4375rem 0 0.4375rem 1.5rem; }
+
+.wp-caption.alignright { margin: 0.4375rem 0 0.4375rem 0.875rem; }
+
+blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 0.4375rem; margin-bottom: 0.4375rem; }
+
+.site-content blockquote.alignleft, .site-content blockquote.alignright { border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-top: 17px; width: 50%; }
+.site-content blockquote.alignleft p, .site-content blockquote.alignright p { margin-bottom: 1.0625rem; }
+
+.wp-caption { margin-bottom: 1.5rem; color: #767676; }
+.wp-caption img[class*="wp-image-"] { display: block; margin: 0; }
+
+.wp-caption-text { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 0.75rem; font-style: italic; line-height: 1.5; margin: 0.5625rem 0; padding-right: 10px; }
+
+.wp-smiley { border: 0; margin-bottom: 0; margin-top: 0; padding: 0; }
+
+/*------- Jetpack -------*/
+#infinite-footer .container { width: 100%; background: transparent; border: none; }
+#infinite-footer .blog-info { display: none; }
+#infinite-footer .blog-credits { width: auto; }
+
+#infinite-handle { width: 100%; margin-bottom: 2.5rem; }
+#infinite-handle span { color: #7f8d7b; background: transparent; border: 1px solid #555555; text-align: center; -webkit-border-radius: 3px; -webkit-background-clip: padding-box; -moz-border-radius: 3px; -moz-background-clip: padding; border-radius: 3px; background-clip: padding-box; text-transform: uppercase; display: block; opacity: 1; -webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out; -o-transition: all 0.25s ease-in-out; -ms-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out; }
+#infinite-handle span:hover { opacity: 0.5; }
+
+.tiled-gallery { margin-bottom: 2.5rem !important; }
+
+/*------- Mediaelements -------*/
+.hentry .mejs-container { margin: 0.75rem 0 1.125rem; }
+.hentry .mejs-mediaelement, .hentry .mejs-container .mejs-controls { background: #000; }
+.hentry .mejs-controls .mejs-time-rail .mejs-time-loaded, .hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current { background: #fff; }
+.hentry .mejs-controls .mejs-time-rail .mejs-time-current { background: #24890d; }
+.hentry .mejs-controls .mejs-time-rail .mejs-time-total { background: rgba(255, 255, 255, 0.33); }
+.hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total { background: rgba(255, 255, 255, 0.33); }
+.hentry .mejs-container .mejs-controls .mejs-time { padding-top: 9px; }
+.hentry .mejs-controls .mejs-time-rail span { border-radius: 0; }
+.hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total, .hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current { border-radius: 0; }
+.hentry .mejs-overlay-loading { background: transparent; }
+
+/* Responsive images. Fluid images for posts, comments, and widgets */
+.comment-content img, .entry-content img, .entry-summary img, #site-header img, .widget img, .wp-caption { max-width: 100%; }
+
+/** Make sure images with WordPress-added height and width attributes are scaled correctly. */
+.comment-content img[height], .entry-content img, .entry-summary img { height: auto; }
+
+img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"] { height: auto; }
+
+#site-header img { height: auto; }
+
+img.size-full, img.size-large { height: auto; max-width: 100%; }
+
+.wp-post-image, .post-thumbnail img { height: auto; max-width: 100%; }
+
+/* Make sure embeds and iframes fit their containers */
+embed, iframe, object, video { margin-bottom: em-calc(24); max-width: 100%; }
+
+p > embed, p > iframe, p > object { margin-bottom: 0; }
+
+span > embed, span > iframe, span > object { margin-bottom: 0; }
+
+.entry-content .twitter-tweet-rendered { max-width: 100% !important; /* Override the Twitter embed fixed width */ }
+
+/*------- Navigation -------*/
+.site-main [class*="navigation"] { margin: 0 0 1.25rem; padding-bottom: 40px; overflow: hidden; }
+
+[class*="navigation"] .nav-previous { float: left; width: 50%; }
+[class*="navigation"] .nav-next { float: right; text-align: right; width: 50%; }
+
+.page-links { clear: both; line-height: 1.8; }
+
+/*------- Widgets -------*/
+.widget { -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; hyphens: auto; -ms-word-wrap: break-word; word-wrap: break-word; margin-bottom: 3rem; }
+.widget ol, .widget ul { list-style-type: none; margin: 0; padding: 0; }
+.widget li { padding: 5px 0; }
+.widget li:last-child { padding-bottom: 0; }
+.widget li > ul, .widget li > ol { margin-left: 1.25rem; }
+.widget.widget_search { margin-bottom: 0; }
+
+.search-form .search-submit { display: none; }

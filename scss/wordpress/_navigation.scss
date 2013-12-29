@@ -1,0 +1,23 @@
+/*------- Navigation -------*/
+.site-main [class*="navigation"] {
+    margin: 0 0 rem-calc(20);
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+[class*="navigation"] {
+    .nav-previous {
+        float: left;
+        width: 50%;
+    }
+    .nav-next {
+        float: right;
+        text-align: right;
+        width: 50%;
+    }
+}
+
+.page-links {
+    clear: both;
+    line-height: 1.8;
+}

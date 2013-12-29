@@ -1,0 +1,33 @@
+/*------- Widgets -------*/
+.widget {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: rem-calc(48);
+    ol,
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        padding: 5px 0;
+        &:last-child {
+            padding-bottom: 0;
+        }
+        & > ul,
+        & > ol {
+            margin-left: rem-calc(20);
+        }
+    }
+    &.widget_search {
+        margin-bottom: 0;
+    }
+}
+
+.search-form .search-submit {
+    display: none;
+}

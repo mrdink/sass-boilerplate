@@ -1,0 +1,12 @@
+@import "settings";
+/*!
+Theme Name:         Sass Boilerplate
+Theme URI:          https://github.com/mrdink/sass-boilerplate
+Description:        Project starter for any web project but mostly tooled for WordPress
+Version:            1.0
+Author:             Justin Peacock
+Author URI:         http://sixteenbit.com
+*/
+
+@import "functions/rem-calc";
+@import "wordpress/wordpress";
